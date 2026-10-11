@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Donation Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Book Donation Form</h1>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Book Title:</label>
+        <input type="text" placeholder="Enter book title" required>
+
+        <label>Book Category:</label>
+        <select>
+            <option>Fiction</option>
+            <option>Educational</option>
+            <option>Story Books</option>
+            <option>Reference Books</option>
+            <option>Other</option>
+        </select>
+
+        <label>Number of Books:</label>
+        <input type="number" min="1" required>
+
+        <label>Condition of Books:</label>
+        <select>
+            <option>New</option>
+            <option>Good</option>
+            <option>Used</option>
+        </select>
+
+        <label>Additional Message:</label>
+        <textarea rows="3" placeholder="Any other details"></textarea>
+
+        <button type="submit">Donate Books</button>
+    </form>
+
+</body>
+</html>
